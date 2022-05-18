@@ -26,8 +26,8 @@ namespace concord::kvbc::v2MerkleTree {
 #ifdef USE_ROCKSDB
 class RocksDBStorageFactory : public IStorageFactory {
  public:
-  static const std::size_t DEFAULT_ROCKSDB_BLOCK_CACHE_BYTES = 1024 * 1024 * 1024 * 12ul;  // 8 GB
-  static const std::size_t DEFAULT_ROCKSDB_ROW_CACHE_BYTES = 1024 * 1024 * 1024 * 12ul;    // 8 GB
+  static const std::size_t DEFAULT_ROCKSDB_BLOCK_CACHE_BYTES = 1024 * 1024 * 1024 * 12ul;  // 12 GB
+  static const std::size_t DEFAULT_ROCKSDB_ROW_CACHE_BYTES = 1024 * 1024 * 1024 * 12ul;    // 12 GB
 
   RocksDBStorageFactory(
       const std::string& dbPath,
